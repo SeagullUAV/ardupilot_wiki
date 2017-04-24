@@ -22,63 +22,91 @@ boards that can be used for this purpose.
 
    Please add new boards/cables you discover to this page (or `request the addition <https://github.com/ArduPilot/ardupilot_wiki/issues/new>`__).
 
-Seagull #REC
-============
-
-`Seagull #REC <http://www.seagulluav.com/product/seagull-rec/>`__ provides
-everything needed to connect a Pixhawk to a supported Sony MultiPort™
-equipped camera in order to automate camera shutter triggering. The
-current list of compatible cameras :ref:`can be found here <common-camera-shutter-triggering-for-sony-multiport-connectors-using-seagull-map_compatible_cameras>`.
-
-   #REC Camera Board from Seagull
-
-The board supports two trigger modes: AF-T (Autofocus-Trigger, 1 sec
-pre-AF then trigger) and IS-T (Instant-Trigger, instant trigger as soon
-as camera locks focus). On Sony "Multi" cameras it also supports turning
-the camera On/Off.
-
-:ref:`Camera Shutter Triggering for Sony MultiPort Connectors using Seagull #REC <common-camera-shutter-triggering-for-sony-multiport-connectors-using-seagull-map>`
-provides a brief overview of how to set up the MAP board. ( the RECs predecessor ) 
-More detailed instructions are provided in the `Seagull #REC Manual <http://www.seagulluav.com/manuals/Seagull_REC-Manual.pdf>`__.
-
-TIP:   the #REC superceeds the #MAP and #MAP2 which were it's predecessors.  
-
-SkySight MONO
+Seagull #MAP2
 =============
 
-Farsight's `SkySight MONO <http://skysight.eu/?product=skysight-mono>`__
-provides everything needed to connect a Pixhawk to a supported Sony
-MultiPort™ equipped camera in order to automate camera shutter
-triggering. The current list of compatible cameras is on the `product page <http://skysight.eu/?product=skysight-mono>`__.
+`Seagull #MAP2 <http://www.seagulluav.com/product/seagull-map2/>`__ provides everything needed to connect a Pixhawk or APM controller to any of the 350+ supported camera models. 
 
-.. figure:: ../../../images/SkySightMono.jpg
-   :target: ../_images/SkySightMono.jpg
+.. figure:: http://www.seagulluav.com/ardupilot/SeagullMAP2.jpg
+   :target: http://www.seagulluav.com/ardupilot/SeagullMAP2.jpg
 
-   `SkySightMONO <http://skysight.eu/?product=skysight-mono>`__ and CameraCable
+#MAP2 supports two primary trigger modes: 
 
-The board supports four camera triggering modes, allowing you to trigger
-the shutter in single shot and burst modes, both with and without first
-setting the autofocus. The mode used is determined by the servo PWM
-output set in the :ref:`Camera Shutter Configuration <common-camera-shutter-with-servo>` in Mission Planner.
+- AF-T (Autofocus-Trigger, 1 sec pre-AF then trigger)
+- IS-T (Instant-Trigger, instant trigger as soon as camera locks focus)
 
-:ref:`Camera Shutter Triggering for Sony MultiPort Connectors using SkySight MONO <common-camera-shutter-triggering-for-sony-multiport-connectors-using-skysight-mono>`
-provides a brief overview of how to set up the board. More detailed
-instructions are provided in the `SkySight MONO User Manual <http://skysight.eu/wp-content/uploads/2015/05/MONO-User-Manual.pdf>`__.
+_On Sony "Multi" cameras it also supports turning the camera On/Off._
 
-Stratosnapper v2
-================
 
-The `Stratosnapper V2 <http://littlesmartthings.com/product/stratosnapper-2/>`__ is a
-camera remote-control board which supports a large number of output
-types (cables/connectors, infra-red, LANC, etc) and a very broad range
-of cameras.
+#MAP-X is controlled by a standard PWM servo signal that intergrates perfectly with Pixhawk and APM controllers.
 
-Product information:
+**Both camera cable and servo cables are included with #MAP2.**
 
--  `Purchase Stratosnapper V2 <http://littlesmartthings.com/product/stratosnapper-2/>`__
--  `Supported cameras <http://littlesmartthings.com/support-documentation/faq/supported-cameras-2/>`__
--  :ref:`Camera Shutter Triggering using Stratosnapper <common-pixhawk-auto-camera-trigger-without-chdk>`
-   (wiki guide on how to connect to a Sony NEX5 with an IR trigger.
+
+Supported camera brands:
+
+- Canon
+- Nikon
+- Sony
+- Apple
+- Contax
+- Fujifilm
+- Hasselblad
+- Leica
+- Olympus
+- Panasonic
+- Pentax
+- Samsung
+- Sigma
+
+The updated list of compatible cameras are easiest viewed on the `Seagull #MAP2 product page <http://www.seagulluav.com/product/seagull-map2/>`__ from the dropdown boxes at the top of the page.
+
+Seagull #MAP2 also adds timelapse (interval) triggering, able to trigger at 1, 2, 3, 4, 5, 10, 15 or 20sec interval.
+It even features a Sony QX-1 "keep-alive" mode to prevent the know "auto power-off" after 2min on the QX-1.
+
+
+More detailed instructions are provided in the `Seagull #MAP2 Manual <http://www.seagulluav.com/manuals/Seagull_MAP2-Manual.pdf>`__.
+
+Seagull UAV is known for their superior support - be sure to contact them if the above _"triggers"_ any questions !
+
+-  `Purchase Seagull #MAP2 <http://www.seagulluav.com/product/seagull-map2/>`__
+
+
+Seagull #MAP-X
+==============
+
+`Seagull #MAP-X <http://www.seagulluav.com/product/seagull-map-x/>`__ gives you precise coordinates of photographs taken and only tags the location if the photograph has been successfully taken. On top of that #MAP-X outputs coordinates of failed photographs, giving you a quick data for re-flying survey points and capture the missing photos.
+
+As well as the above #MAP-X also generates a .KML file for each flight with all of the “Confirmed” and “Failed” coordinates of photos, which can be loaded into Google Earth for a quick overview after each flight !
+
+.. figure:: http://www.seagulluav.com/ardupilot/SeagullMAPX.jpg
+   :target: http://www.seagulluav.com/ardupilot/SeagullMAPX.jpg
+
+With Seagull #MAP-X you get everything you need to connect your camera to your Pixhawk or APM controller.
+Hotshoe adaptor, servo and camera cables are included, as well as the GPS antenna, microSD card etc. – making it a Plug&Play solution !
+#MAP-X delivers unbelievable value to your professional mapping jobs, saving both you and your clients time and money, so you can do more jobs in a day.
+
+Supported camera brands:
+
+- Canon
+- Nikon
+- Sony
+- Fujifilm
+- Leica
+- Olympus
+- Panasonic
+- Samsung
+- Sigma
+
+The updated list of compatible cameras are easiest viewed on the `Seagull #MAP-X product page <http://www.seagulluav.com/product/seagull-map-x/>`__ from the dropdown boxes at the top of the page.
+
+Seagull #MAP-X also features a user-defined timelapse (interval) trigger, that can be set to match the needs of the application.
+
+More detailed instructions are provided in the `Seagull #MAP-X Manual <http://www.seagulluav.com/manuals/Seagull_MAP-X-Manual.pdf>`__.
+
+Seagull UAV is known for their superior support - be sure to contact them if the above _"triggers"_ any questions !
+
+-  `Purchase Seagull #MAP-X <http://www.seagulluav.com/product/seagull-map-x/>`__
 
 Detailed information
 ====================
@@ -86,6 +114,4 @@ Detailed information
 .. toctree::
     :maxdepth: 1
     
-    Seagull #MAP (Sony MultiPort) <common-camera-shutter-triggering-for-sony-multiport-connectors-using-seagull-map>
-    SkySight MONO Sony (MultiPort) <common-camera-shutter-triggering-for-sony-multiport-connectors-using-skysight-mono>
-    Stratosnapper (IR) <common-pixhawk-auto-camera-trigger-without-chdk>
+    Seagull #MAP2 <common-camera-shutter-triggering-for-sony-multiport-connectors-using-seagull-map>
