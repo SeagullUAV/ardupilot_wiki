@@ -30,6 +30,7 @@ recommended for use with ArduPilot (in alphabetical order).  You may also want t
 * `Northox <https://northox.myshopify.com/>`__
 * `ProfiCNC <http://www.proficnc.com/stores>`__
 * `RF Design <http://store.rfdesign.com.au/>`__
+* `Seagull UAV <https://www.seagulluav.com/>`__
 * `Skeyetech <http://www.skeyetech-shop.fr/>`__
 * `UnmannedTech UK <https://www.unmannedtechshop.co.uk/>`__
 * `uAvionix <http://www.uavionix.com/>`__
