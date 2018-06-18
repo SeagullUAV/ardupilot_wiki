@@ -22,63 +22,30 @@ boards that can be used for this purpose.
 
    Please add new boards/cables you discover to this page (or `request the addition <https://github.com/ArduPilot/ardupilot_wiki/issues/new>`__).
 
-Seagull #REC
-============
-
-`Seagull #REC <http://www.seagulluav.com/product/seagull-rec/>`__ provides
-everything needed to connect a Pixhawk to a supported Sony MultiPort™
-equipped camera in order to automate camera shutter triggering. The
-current list of compatible cameras :ref:`can be found here <common-camera-shutter-triggering-for-sony-multiport-connectors-using-seagull-map_compatible_cameras>`.
-
-   #REC Camera Board from Seagull
-
-The board supports two trigger modes: AF-T (Autofocus-Trigger, 1 sec
-pre-AF then trigger) and IS-T (Instant-Trigger, instant trigger as soon
-as camera locks focus). On Sony "Multi" cameras it also supports turning
-the camera On/Off.
-
-:ref:`Camera Shutter Triggering for Sony MultiPort Connectors using Seagull #REC <common-camera-shutter-triggering-for-sony-multiport-connectors-using-seagull-map>`
-provides a brief overview of how to set up the MAP board. ( the RECs predecessor ) 
-More detailed instructions are provided in the `Seagull #REC Manual <http://www.seagulluav.com/manuals/Seagull_REC-Manual.pdf>`__.
-
-TIP:   the #REC superceeds the #MAP and #MAP2 which were it's predecessors.  
-
-SkySight MONO
+Seagull #MAP2
 =============
 
-Farsight's `SkySight MONO <http://skysight.eu/?product=skysight-mono>`__
-provides everything needed to connect a Pixhawk to a supported Sony
-MultiPort™ equipped camera in order to automate camera shutter
-triggering. The current list of compatible cameras is on the `product page <http://skysight.eu/?product=skysight-mono>`__.
+`Seagull #MAP2 <https://www.seagulluav.com/product/seagull-map2/>`__ provides
+everything needed to connect a Pixhawk with one of the 300+ supported cameras in order to automate camera shutter triggering. 
 
-.. figure:: ../../../images/SkySightMono.jpg
-   :target: ../_images/SkySightMono.jpg
+   #MAP2 from Seagull UAV
 
-   `SkySightMONO <http://skysight.eu/?product=skysight-mono>`__ and CameraCable
+.. figure:: https://www.seagulluav.com/wp-content/uploads/2016/03/SMAP-1100_01-570x570.png
 
-The board supports four camera triggering modes, allowing you to trigger
-the shutter in single shot and burst modes, both with and without first
-setting the autofocus. The mode used is determined by the servo PWM
-output set in the :ref:`Camera Shutter Configuration <common-camera-shutter-with-servo>` in Mission Planner.
+#MAP2 supports two trigger modes: 
 
-:ref:`Camera Shutter Triggering for Sony MultiPort Connectors using SkySight MONO <common-camera-shutter-triggering-for-sony-multiport-connectors-using-skysight-mono>`
-provides a brief overview of how to set up the board. More detailed
-instructions are provided in the `SkySight MONO User Manual <http://skysight.eu/wp-content/uploads/2015/05/MONO-User-Manual.pdf>`__.
+"AF-T" (Autofocus-Trigger, 1 sec pre-AF then trigger)
+"IS-T" (Instant-Trigger, instant trigger as soon as camera locks focus).
 
-Stratosnapper v2
-================
+Furthermore a "Timelapse" (intervalometer) mode is also available.
+Sony "MULTI" interfaced cameras can also supports a "Camera on/off" feature.
 
-The `Stratosnapper V2 <http://littlesmartthings.com/product/stratosnapper-2/>`__ is a
-camera remote-control board which supports a large number of output
-types (cables/connectors, infra-red, LANC, etc) and a very broad range
-of cameras.
+**NOTE**: An updated camera compatibility list can always be found on the `#MAP2 Cable finder page <https://www.seagulluav.com/map2-cable-finder/>`.  
 
-Product information:
+:ref:`Camera triggering using Seagull #MAP2 <common-camera-shutter-triggering-for-sony-multiport-connectors-using-seagull-map>` provides a brief overview of how to set up the #MAP2 unit. 
+Additional info can be found on the `#MAP2 Support page <https://www.seagulluav.com/seagull-map2-support/>`__ and more detailed instructions are provided in the `Seagull #MAP2 Manual <https://www.seagulluav.com/manuals/Seagull_MAP2-Manual.pdf>`__.
 
--  `Purchase Stratosnapper V2 <http://littlesmartthings.com/product/stratosnapper-2/>`__
--  `Supported cameras <http://littlesmartthings.com/support-documentation/faq/supported-cameras-2/>`__
--  :ref:`Camera Shutter Triggering using Stratosnapper <common-pixhawk-auto-camera-trigger-without-chdk>`
-   (wiki guide on how to connect to a Sony NEX5 with an IR trigger.
+
 
 Detailed information
 ====================
@@ -86,6 +53,4 @@ Detailed information
 .. toctree::
     :maxdepth: 1
     
-    Seagull #MAP (Sony MultiPort) <common-camera-shutter-triggering-for-sony-multiport-connectors-using-seagull-map>
-    SkySight MONO Sony (MultiPort) <common-camera-shutter-triggering-for-sony-multiport-connectors-using-skysight-mono>
-    Stratosnapper (IR) <common-pixhawk-auto-camera-trigger-without-chdk>
+    Seagull #MAP2 (UAV camera trigger) <common-camera-shutter-triggering-for-sony-multiport-connectors-using-seagull-map>
